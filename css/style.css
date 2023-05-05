@@ -1,0 +1,136 @@
+/* DOCUMENT INFORMATION
+    - Document: Projet V1 Annie fruits
+    - Version: 1.0.0
+    - Author: Guillaume
+*/
+
+/* COLORS
+    -default body text #000000, #fff
+    -h1                
+    -h2                
+    -h4                
+
+    -button            #fff, #f45353
+    -button:hover      #fff, #f45353
+
+    -icon              #fff
+
+    -border            #fff
+*/
+
+/* FONTS
+    -Default        Trochut
+    -Subtitle       Roboto
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =QUI SUIS-JE ?
+    4. =MES COMPETENCES
+    5. =TECHNOLOGIES
+    6. =REALISATIONS
+    7. =CONTACT
+    8. =MEDIA QUERIES 1400px
+    9. =MEDIA QUERIES 1200px
+    10. =MEDIA QUERIES 992px
+    11. =MEDIA QUERIES 768px
+    12. =MEDIA QUERIES 576px
+*/
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'Trochut', cursive; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* GLOBAL
+=================================== */
+
+h1{
+    font-family: 'Trochut', cursive;
+    text-align: left;
+    font-size: 800%;
+    padding: 0px 0px 0px 0px;
+}
+
+
+
+/* HEADER
+=================================== */
+
+nav {
+    background-color: #79AA38 !important;
+    height: 100px;
+}
+
+nav img{
+    width: 15vw;
+    border-radius: 50px;
+}
+
+nav a {
+    margin: 20px;
+}
+
+.btn-full {
+    border-radius: 50px;
+    font-family: 'Trochut', cursive;
+    font-size: x-large;
+    background-color: #f45353;
+    color: white;
+    width: 10vw;
+
+}
+
+.btn-full:hover {
+    transition: background-color 1s, color 1s, border 1s;
+    background-color: white;
+    color: #f45353;
+}
+
+.navbar-toggler-icon {
+    color: #f45353 !important;
+}
+
+
+/* CAROUSEL
+=================================== */
+
+.carousel-inner{
+   padding: 150px 100px 100px 100px;
+}
+
+.carousel-item p{
+    font-family: 'Roboto', cursive;
+    font-size: x-large;
+    text-align: left;
+    padding : 0px 200px 350px 0px
+}
+
+.titre{
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+/* BANDEAU
+=================================== */
+
+#bandeau{
+    margin: 0;
+    width: 100%;
+    background-color: #f45353;
+    color: white;
+}
+
+
+#entree{
+    height:10vw;
+}
+
