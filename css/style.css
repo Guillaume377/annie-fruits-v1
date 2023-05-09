@@ -6,9 +6,8 @@
 
 /* COLORS
     -default body text #000000, #fff
-    -h1                
-    -h2                
-    -h4                
+    -h1                #fff
+    -h2                #79AA38               
 
     -button            #fff, #f45353
     -button:hover      #fff, #f45353
@@ -19,58 +18,48 @@
 */
 
 /* FONTS
-    -Default        Trochut
-    -Subtitle       Roboto
+    -Default        font-family: 'Trochut', cursive;
+    -Subtitle       font-family: 'Roboto', sans-serif;
 */
 
 /* CSS DIRECTORY
     1. =GLOBAL
     2. =HEADER
-    3. =QUI SUIS-JE ?
-    4. =MES COMPETENCES
-    5. =TECHNOLOGIES
-    6. =REALISATIONS
-    7. =CONTACT
-    8. =MEDIA QUERIES 1400px
-    9. =MEDIA QUERIES 1200px
-    10. =MEDIA QUERIES 992px
-    11. =MEDIA QUERIES 768px
-    12. =MEDIA QUERIES 576px
+    3. =CAROUSEL PRESENTATION
+    4. =BANDEAU
+    5. =HISTORIQUE
+    6. =CONTACT
+    7. =CAROUSEL CONCEPT
+    8. =FONCTIONNALITES
+    9. =FORMULAIRE
+    10.=RESEAU
+    11.=MEDIA QUERIES 576px
 */
 
-
-
-
-
-
-
-
-
-
-/* font-family: 'Trochut', cursive; */
-/* font-family: 'Roboto', sans-serif; */
-
-/* GLOBAL
+/* 1.GLOBAL
 =================================== */
 
-h1{
+h1 {
     font-family: 'Trochut', cursive;
     text-align: left;
     font-size: 800%;
-    padding: 0px 0px 0px 0px;
 }
 
+h2 {
+    font-family: 'Trochut', cursive;
+    font-size: xx-large;
+    color: #79AA38;
+}
 
-
-/* HEADER
+/* 2.HEADER
 =================================== */
 
 nav {
     background-color: #79AA38 !important;
-    height: 100px;
+    height: 15vh;
 }
 
-nav img{
+nav img {
     width: 15vw;
     border-radius: 50px;
 }
@@ -86,7 +75,6 @@ nav a {
     background-color: #f45353;
     color: white;
     width: 10vw;
-
 }
 
 .btn-full:hover {
@@ -95,42 +83,476 @@ nav a {
     color: #f45353;
 }
 
-.navbar-toggler-icon {
-    color: #f45353 !important;
+.navbar-toggler {
+    background-color: #f45353;
 }
 
-
-/* CAROUSEL
+/* 3.CAROUSEL PRESENTATION
 =================================== */
 
-.carousel-inner{
-   padding: 150px 100px 100px 100px;
+.carousel-inner {
+    padding: 9% 5% 5% 5%;
 }
 
-.carousel-item p{
+.titre {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+}
+
+.titre h1 {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+.titre p {
     font-family: 'Roboto', cursive;
     font-size: x-large;
     text-align: left;
-    padding : 0px 200px 350px 0px
 }
 
-.titre{
-    background-color:rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
+.carousel-caption {
+    text-align: left;
+    position: absolute;
+    left: 8%;
+    top: 7%
 }
 
-/* BANDEAU
+.carousel-inner .btn {
+    font-size: xx-large;
+    font-family: 'Trochut', cursive;
+    transition: background-color 1s, color 1s, border 1s;
+    border-radius: 1em;
+    color: white;
+    width: 20vw;
+    height: 9vh;
+}
+
+.btn-red {
+    background-color: #f45353;
+}
+
+.btn-red:hover {
+    background-color: white;
+    color: #f45353;
+}
+
+.btn-green {
+    background-color: #79AA38;
+}
+
+.btn-green:hover {
+    background-color: white;
+    color: #79AA38;
+}
+
+/* 4.BANDEAU
 =================================== */
 
-#bandeau{
+#bandeau {
     margin: 0;
-    width: 100%;
     background-color: #f45353;
     color: white;
 }
 
+/* 5.HISTORIQUE
+=================================== */
 
-#entree{
-    height:10vw;
+#entree img {
+    height: 65vh;
 }
 
+#entree p {
+    font-size: 300%;
+    letter-spacing: 0.3em;
+    font-family: 'Trochut', cursive;
+    color: white;
+}
+
+.entreprise {
+    font-size: 120%;
+    text-align: justify;
+}
+
+/* 6.CONTACT
+=================================== */
+
+footer {
+    background-color: #79AA38 !important;
+}
+
+.logo-footer {
+    width: 15vw;
+    border-radius: 50px;
+}
+
+.contact {
+    font-size: xx-large;
+    font-family: 'Trochut', cursive;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact p:hover {
+    color: #f45353
+}
+
+.social i {
+    font-size: 300%;
+    color: #f45353
+}
+
+.social i:hover {
+    color: #4263A0;
+}
+
+.copyright {
+    font-family: 'Trochut', cursive;
+    color: #fff;
+}
+
+
+/* -------------------PAGE CONCEPT-----------------*/
+
+/* 7.CAROUSEL CONCEPT
+=================================== */
+
+.carousel-inner {
+    padding: 9% 5% 5% 5%;
+}
+
+.d-block {
+    width: 50%;
+}
+
+.fleche {
+    background-color: #f45353
+}
+
+.red {
+    position: relative;
+    left: 60%;
+    color: #f45353
+}
+
+.green {
+    position: relative;
+    left: 60%;
+    color: #79AA38
+}
+
+.red h1 {
+    font-size: 650%;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+.green h1 {
+    font-size: 650%;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+.red p {
+    font-family: 'Roboto', cursive;
+    font-size: x-large;
+    text-align: left;
+}
+
+.green p {
+    font-family: 'Roboto', cursive;
+    font-size: x-large;
+    text-align: left;
+}
+
+.carousel-caption {
+    text-align: left;
+    position: absolute;
+    left: 8%;
+    top: 7%
+}
+
+/* 8.FONCTIONNALITES
+=================================== */
+
+.vitrine p {
+    font-size: large;
+    font-family: 'Roboto', cursive;
+    text-align: justify;
+}
+
+.fonctions h2 {
+    color: #f45353;
+}
+
+.fonctions li {
+    font-size: large;
+    font-family: 'Roboto', cursive;
+    text-align: justify;
+}
+
+/* -------------------PAGE CONTACT-----------------*/
+
+/* 9.FORMULAIRE
+=================================== */
+
+#contact {
+    padding-top: 7.2%;
+}
+
+.image {
+    background-image: url(/images/verger.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image h1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1em;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    color: #fff;
+}
+
+#formulaire {
+    padding: 5% 0%;
+    font-family: 'Roboto', cursive;
+    color: #f45353;
+}
+
+#formulaire h2{
+    padding: 3% 0%;
+}
+.btn-envoyer {
+    background-color: #f45353;
+    color: #fff;
+    font-size: x-large;
+}
+
+.btn-envoyer:hover {
+    background-color: #79AA38;
+    border-color: #79AA38;
+    color: #fff;
+}
+
+/* 10.RESEAU
+=================================== */
+
+.reseau {
+    padding-bottom: 5%;
+}
+
+.reseau h2 {
+    padding: 5% 0%;
+    font-size: 300%;
+}
+
+.facebook {
+    font-size: 1200%;
+    color: #f45353;
+}
+
+.facebook:hover {
+    color: #4263A0
+}
+
+
+
+/* =================11.MEDIA QUERIES 576px================ */
+
+@media screen and (max-width: 576px) {
+
+    /* **********PAGE ACCUEIL********** */
+
+    nav img {
+        width: 30vw;
+    }
+
+    .btn-full {
+        width: 20vw;
+    }
+
+    /* ----------CAROUSEL----------*/
+
+    .carousel-inner {
+        padding: 22% 5% 5% 5%;
+    }
+
+    .d-block {
+        height: 80vh;
+    }
+
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titre {
+        position: relative;
+        left: 17%;
+        bottom: 5%
+    }
+
+    .titre h1 {
+        text-align: center;
+        font-size: 300%;
+        text-decoration-thickness: 2px;
+    }
+
+    .titre p {
+        font-size: large;
+        text-align: center;
+    }
+
+    .carousel-inner .btn {
+        font-size: x-large;
+        width: 40vw;
+        height: 7.5vh;
+        position: relative;
+        top: 10%
+    }
+
+    /* ----------BANDEAU----------*/
+
+    .icone {
+        font-size: 500%;
+    }
+
+    .valeur {
+        font-size: x-large;
+    }
+
+    /* ----------HISTORIQUE----------*/
+
+    .historique {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .entreprise {
+        font-size: large;
+    }
+
+    #entree p {
+        letter-spacing: 0.4em;
+        position: absolute;
+        right: 0;
+    }
+
+    /* ----------CONTACT---------*/
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-footer {
+        width: 35vw;
+        margin-bottom: 20px;
+    }
+
+    .social {
+        font-size: x-large;
+    }
+
+    /* **********PAGE CONCEPT********** */
+
+    .carousel-inner {
+        height: 130vw;
+    }
+
+    .d-block {
+        width: 100%;
+    }
+
+    .red {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 1em;
+        position: relative;
+        left: 5%;
+        top: 50%;
+        color: #f45353;
+    }
+
+    .green {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 1em;
+        position: relative;
+        left: 5%;
+        top: 50%;
+        color: #79aa38;
+    }
+
+    .one h1 {
+        position: relative;
+        left: 2%;
+        font-size: 490%;
+    }
+
+    .two h1 {
+        position: relative;
+        left: 12%;
+        font-size: 490%;
+    }
+
+    .three h1 {
+        position: relative;
+        left: 17%;
+        font-size: 490%;
+    }
+
+    .four h1 {
+        font-size: 490%;
+    }
+
+    .red p {
+        position: relative;
+        left: 11%
+    }
+
+    .green p {
+        position: relative;
+        left: 9%
+    }
+
+    .projet img {
+        height: 50vh;
+    }
+
+    .fonctions {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .fonctions img {
+        height: 50vh;
+    }
+
+    /* **********PAGE CONTACT********* */
+
+    /* ----------FORMULAIRE---------*/
+
+    #contact h1 {
+        font-size: 400%;
+        position: absolute;
+        top: 30%;
+        left: 20%
+    }
+
+    .btn-envoyer {
+        position: absolute;
+        left: 40.5%
+    }
+
+    /* ----------RESEAUX SOCIAUX---------*/
+
+    .reseau h2 {
+        padding-top: 20%;
+    }
+}
