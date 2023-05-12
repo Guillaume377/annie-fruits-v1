@@ -51,6 +51,10 @@ h2 {
     color: #79AA38;
 }
 
+p {
+    font-family: 'Roboto', cursive;
+}
+
 /* 2.HEADER
 =================================== */
 
@@ -105,7 +109,6 @@ nav a {
 }
 
 .titre p {
-    font-family: 'Roboto', cursive;
     font-size: x-large;
     text-align: left;
 }
@@ -154,6 +157,10 @@ nav a {
     color: white;
 }
 
+#bandeau i {
+    color: #fff;
+}
+
 /* 5.HISTORIQUE
 =================================== */
 
@@ -185,14 +192,14 @@ footer {
     border-radius: 50px;
 }
 
-.contact {
-    font-size: xx-large;
-    font-family: 'Trochut', cursive;
-}
-
 .contact a {
     text-decoration: none;
     color: white;
+}
+
+.contact p {
+    font-family: 'Trochut', cursive;
+    font-size: xx-large;
 }
 
 .contact p:hover {
@@ -208,8 +215,7 @@ footer {
     color: #4263A0;
 }
 
-.copyright {
-    font-family: 'Trochut', cursive;
+.copyright p {
     color: #fff;
 }
 
@@ -231,38 +237,26 @@ footer {
     background-color: #f45353
 }
 
-.red {
+.red, .green {
     position: relative;
     left: 60%;
+}
+
+.red {
     color: #f45353
 }
 
 .green {
-    position: relative;
-    left: 60%;
     color: #79AA38
 }
 
-.red h1 {
+.red h1, .green h1 {
     font-size: 650%;
     text-decoration: underline;
     text-decoration-thickness: 5px;
 }
 
-.green h1 {
-    font-size: 650%;
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-}
-
-.red p {
-    font-family: 'Roboto', cursive;
-    font-size: x-large;
-    text-align: left;
-}
-
-.green p {
-    font-family: 'Roboto', cursive;
+.red p, .green p {
     font-size: x-large;
     text-align: left;
 }
@@ -279,7 +273,6 @@ footer {
 
 .vitrine p {
     font-size: large;
-    font-family: 'Roboto', cursive;
     text-align: justify;
 }
 
@@ -289,7 +282,6 @@ footer {
 
 .fonctions li {
     font-size: large;
-    font-family: 'Roboto', cursive;
     text-align: justify;
 }
 
@@ -303,7 +295,7 @@ footer {
 }
 
 .image {
-    background-image: url(/images/verger.jpg);
+    background-image: url(../images/verger.jpg);
     height: 50vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -321,13 +313,13 @@ footer {
 
 #formulaire {
     padding: 5% 0%;
-    font-family: 'Roboto', cursive;
     color: #f45353;
 }
 
-#formulaire h2{
+#formulaire h2 {
     padding: 3% 0%;
 }
+
 .btn-envoyer {
     background-color: #f45353;
     color: #fff;
@@ -471,54 +463,56 @@ footer {
         width: 100%;
     }
 
-    .red {
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 1em;
-        position: relative;
-        left: 5%;
-        top: 50%;
-        color: #f45353;
-    }
-
+    .red,
     .green {
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 1em;
         position: relative;
         left: 5%;
         top: 50%;
+    }
+
+    .red {
+        color: #f45353;
+    }
+
+    .green {
         color: #79aa38;
+    }
+
+    .red h1,
+    .green h1 {
+        font-size: 400%;
     }
 
     .one h1 {
         position: relative;
-        left: 2%;
-        font-size: 490%;
+        left: 5%;
     }
 
     .two h1 {
         position: relative;
         left: 12%;
-        font-size: 490%;
     }
 
     .three h1 {
         position: relative;
         left: 17%;
-        font-size: 490%;
     }
 
-    .four h1 {
-        font-size: 490%;
+    .four h1{
+        position: relative;
+        left: 5%
     }
 
     .red p {
         position: relative;
-        left: 11%
+        left: 13%
     }
 
     .green p {
         position: relative;
-        left: 9%
+        left: 11%
     }
 
     .projet img {
